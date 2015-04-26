@@ -24,24 +24,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		jade: {
-			compile: {
-				options: {
-					pretty: true,
-					data: {
-						debug: false
-					}
-				},
-				files: [{
-					expand: true,
-					cwd: 'source/jade/',
-					src: ['*.jade'],
-					dest: 'build/',
-					ext: '.html'
-				}]
-			}
-		},
-
 		compass: {
 			dist: {
 				options: {
@@ -115,12 +97,11 @@ module.exports = function(grunt) {
 		},
 
 		watch: {
-			jade: {
-				files: ['source/jade/**/*.jade','source/jade/**/*.html'],
-				tasks: ['jade'],
+			html: {
+				files: '**/*.scss',
 				options: {
-					livereload: true
-				}
+                    livereload: true
+                }
 			},
 			sass: {
 				files: ['source/styles/**/*.scss' ],
