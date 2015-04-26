@@ -1,12 +1,10 @@
 {
-  "name": "bower-example",
-  "version": "0.0.0",
+  "name": "Pneumatic Monkey site",
+  "version": "1.0.0",
   "authors": [
-    "author <author@example.com>"
+    "Mike Lewis <mike@pneumaticmonkey.com>"
   ],
-  "description": "An example project using bower.",
-  "main": "index.html",
-  "license": "MIT",
+  "license": "Proprietary",
   "private": true,
   "ignore": [
     "**/.*",
@@ -15,7 +13,13 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
-    "jquery": "~2.1.1"
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "normalize.css": "~3.0.2",
+    "angularjs": "1.2.9",
+    "html5shiv": "~3.7.2",
+    "jquery": "1.11.2",
+    "jquery-waypoints": "~3.1.0",
+    "bourbon": "~4.1.1"
   }
 }
